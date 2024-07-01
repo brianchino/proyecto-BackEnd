@@ -1,5 +1,5 @@
 from flask import jsonify
-#from flask import render_template
+from flask import render_template
 from flask import request
 
 from app import app
@@ -84,6 +84,10 @@ def crear_usuario():
 def modificar_usuario():    
     datos = request.get_json()
     print(f"Datos recibidos: {datos}")
+    cuenta = Cuenta.obtener('mail',datos['mail'])
+    usuario = Usuario.obtener('id_cuenta',cuenta.id)
+    del datos['mail']
+    #datos['id'] = cuenta.id
     Usuario.modificar(datos)
     return jsonify(datos)
 

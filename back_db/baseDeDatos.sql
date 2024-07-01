@@ -36,9 +36,17 @@ INSERT INTO sucursal (nombre,direccion,horario) VALUES
     ('Samco Flores','Avenida Rividavia 7392','Lunes a Viernes de 9 a 18 hs.'),
     ('Samco Liniers','Avenida Rividavia 10701','Lunes a Viernes de 9 a 16 hs.');
     
-SELECT * FROM sucursal;
-SELECT * FROM usuario;
-SELECT * FROM cuenta;
+SELECT * 
+FROM sucursal
+ORDER BY nombre;
+
+SELECT *
+FROM usuario
+ORDER BY apellido;
+
+SELECT * 
+FROM cuenta
+ORDER BY id;
 
 
 

@@ -11,4 +11,4 @@ from componentes.vistas_api import *
 #from componentes.vistas_web import *
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

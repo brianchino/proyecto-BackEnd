@@ -24,7 +24,7 @@ class Cuenta(Tabla):
     
     tabla = 'cuenta'
     conexion = conexion
-    campos = ('id', 'correo', 'clave')
+    campos = ('id', 'mail', 'clave')
     
     def __init__(self, *args, de_bbdd=False):
         

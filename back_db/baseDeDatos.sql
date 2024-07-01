@@ -10,10 +10,11 @@ PRIMARY KEY(id)
 );
 CREATE TABLE cuenta (
 id INT NOT NULL AUTO_INCREMENT,
-correo VARCHAR(60),
+mail VARCHAR(60),
 clave VARCHAR(60),
 PRIMARY KEY(id)
 );
+
 CREATE TABLE usuario (
 id INT NOT NULL AUTO_INCREMENT,
 id_cuenta INT,
@@ -38,3 +39,7 @@ INSERT INTO sucursal (nombre,direccion,horario) VALUES
 SELECT * FROM sucursal;
 SELECT * FROM usuario;
 SELECT * FROM cuenta;
+
+
+
+

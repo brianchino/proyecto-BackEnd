@@ -47,6 +47,10 @@ def validar_cuenta():
                 respuesta['perfil'] = 0
             else:
                 respuesta['perfil'] = 1
+                respuesta['nombre'] =usuario.nombre
+                respuesta['apellido'] =usuario.apellido
+                respuesta['dni'] =usuario.dni
+                respuesta['fecha_de_nacimiento'] = usuario.fecha_de_nacimiento
             
             respuesta['mensaje'] = 'Ingreso exitoso!'
             respuesta['status'] = 200

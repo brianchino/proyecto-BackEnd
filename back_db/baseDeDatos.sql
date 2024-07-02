@@ -40,9 +40,11 @@ SELECT *
 FROM sucursal
 ORDER BY nombre;
 
+
 SELECT *
 FROM usuario
 ORDER BY apellido;
+
 
 SELECT * 
 FROM cuenta

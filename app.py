@@ -8,7 +8,7 @@ cors = CORS(app, resources={r"/api-proyecto/*": {'origins': '*'}})
 
 
 from componentes.vistas_api import *
-#from componentes.vistas_web import *
+from componentes.vistas_web import *
 
 if __name__ == "__main__":
     app.run(debug=True)

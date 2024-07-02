@@ -5,7 +5,6 @@ from flask import request
 from app import app
 from componentes.modelos import Usuario
 from componentes.modelos import Sucursal
-
 from componentes.modelos import Cuenta
 
 

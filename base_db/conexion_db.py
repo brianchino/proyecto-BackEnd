@@ -8,10 +8,10 @@ config_dev = {
 }
 
 config_prod = {
-  'user': 'ChToleCAC',
-  'password': '2024CACPythonFS',
-  'host': 'ChToleCAC.mysql.pythonanywhere-services.com',
-  'database': 'ChToleCAC$default',
+  'user': 'chinoBrian',
+  'password': 'francisco50',
+  'host': 'chinoBrian.mysql.pythonanywhere-services.com',
+  'database': 'chinoBrian$default',
 }
 
 conexion = mysql.connector.connect(**config_dev)     
